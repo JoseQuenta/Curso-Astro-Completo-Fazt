@@ -1,15 +1,23 @@
 ---
+import Layout from '../components/Layout.astro'
+
+import bgImage from '../images/yellowDress.jpg'
+
+import Button from '../components/ButtonSubscribe.jsx'
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout pageTitle="Pagina inicial" pageDescription="Esta es una pagina para ofrecer vestidos de novias">
+
+
+
+	<h1>Bienvenido a Dream Girl's</h1>
+	<h2>Bienvenido a Dream Girl's</h2>
+	<h3>Bienvenido a Dream Girl's</h3>
+	<h1>dsadsa</h1>
+	<p>Bienvenido Dream Girl's</p>
+
+	<img width="200" src={bgImage} alt="">
+
+	<Button client:visible/>
+
+</Layout>

@@ -1,0 +1,31 @@
+---
+interface Props{
+    pageTitle?: string
+    pageDescription?: string
+}
+
+const {pageTitle, pageDescription} = Astro.props
+---
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content={pageDescription}>
+    <title>Astro Curso | {pageTitle}</title>
+</head>
+<body>
+    
+    <slot/>
+
+    <style>
+        body{
+            background: #e65c5c;
+            color: rgb(253, 255, 128);
+        }
+    </style>
+
+</body>
+</html>
